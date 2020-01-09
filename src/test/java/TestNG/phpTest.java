@@ -17,7 +17,8 @@ public class phpTest {
 	{
 		System.setProperty("webdriver.chrome.driver","/tmp/workspace/test/target/surefire-reports/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--Headless");
+		options.addArguments("--headless");
+		options.addArguments("--no-sandbox");
 		driver = new ChromeDriver(options);
 		options.addArguments("--headless");
 		driver.get("http://35.194.210.186:9999/");
