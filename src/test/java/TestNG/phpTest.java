@@ -15,7 +15,7 @@ public class phpTest {
 	@BeforeMethod
 	public void launch()
 	{
-		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/tmp/workspace/test/target/surefire-reports/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--Headless");
 		driver = new ChromeDriver(options);
