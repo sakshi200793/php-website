@@ -19,6 +19,7 @@ public class phpTest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--Headless");
 		driver = new ChromeDriver(options);
+		options.addArguments("--headless");
 		driver.get("http://35.194.210.186:9999/");
        
 	}
