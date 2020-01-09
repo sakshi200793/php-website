@@ -15,7 +15,7 @@ public class phpTest {
 	@BeforeMethod
 	public void launch()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\sakshikanoongo\\eclipse-workspace\\testproj-website\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--Headless");
 		driver = new ChromeDriver(options);
